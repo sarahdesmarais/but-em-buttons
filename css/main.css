@@ -2,16 +2,24 @@ html {
   font-family: "Ubuntu Condensed", sans-serif;
 }
 
-.banner {
+body {
   background-image: url("../images/starfield.png")
 }
 
 .banner-content {
   color: #fff;
+  padding-top: 12em;
 }
 
-.btn {
+.btn-ghost {
   color: #b4fff4;
   border-color: #b4fff4;
   border-radius: 8px;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+  background-color: rgba(180, 255, 244, .2);
+  color: #b4fff4;
+  border-color: #b4fff4;
 }
