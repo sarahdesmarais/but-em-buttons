@@ -3,23 +3,44 @@ html {
 }
 
 body {
-  background-image: url("../images/starfield.png")
+  background-image: url("../images/starfield.png");
 }
 
 .banner-content {
   color: #fff;
   padding-top: 12em;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, .7);
 }
 
-.btn-ghost {
-  color: #b4fff4;
+.btn {
+  color: #90ccc3;
   border-color: #b4fff4;
   border-radius: 8px;
+  padding: 1em;
 }
 
 .btn-ghost:hover,
 .btn-ghost:focus {
   background-color: rgba(180, 255, 244, .2);
   color: #b4fff4;
-  border-color: #b4fff4;
+  border-color: #90ccc3;
+  transition: all 250ms ease;
+}
+
+.icon {
+  bottom: .25em;
+}
+
+.icon,
+.btn {
+  transition: all 250ms ease;
+}
+
+.btn:active {
+  top: 1em;
+  transform: translate(0, .25em);
+}
+
+.btn-ghost:hover .icon {
+  transform: translate(0, -.5em);
 }
